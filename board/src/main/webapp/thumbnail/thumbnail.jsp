@@ -1,28 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="freeboard.*" %>
-    <%@ page import="java.util.*" %>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-    <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
-	<%@page import="com.oreilly.servlet.MultipartRequest"%>
+    
+    <!--썸네일은 import 이렇게 필요하다....  -->
     <%@ page import= "java.awt.Graphics2D" %>
     <%@ page import= "java.awt.image.renderable.ParameterBlock" %>
     <%@ page import= "java.awt.image.BufferedImage" %>
     <%@ page import= "javax.media.jai.JAI" %>
     <%@ page import= "javax.media.jai.RenderedOp" %>
     <%@ page import= "javax.imageio.ImageIO" %>
+    <%@ page import = "com.oreilly.servlet.MultipartRequest" %>
+    <%@ page import = "com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
     <%@ page import = "java.util.*" %>
     <%@ page import = "java.io.*" %>
-    <%
-    request.setCharacterEncoding("utf-8");
-    %>
-    <jsp:useBean id="fvo" class="freeboard.FreeBoardVO"/>
-    <jsp:useBean id="fdao" class="freeboard.FreeBoardDao"/>
-    <jsp:setProperty name="fvo" property="*"/>
-    <%
-    	fdao.insert(fvo);
-    %>
-    <%
+    
+   <%
    	String imagePath = request.getRealPath("upload");
    	int size = 10 * 1024 * 1024; // 100mb
    	
@@ -66,20 +57,24 @@
    					//이미지 확장자 출력형태
    		ImageIO.write(thumb, "jpg", file);
    %> 
-   <c:redirect url="../freeboard/freelist.jsp"/>
-  
-
+    
+    
+    
     
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>이미지 썸 네일</title>
 </head>
 <body>
+
 -원본 이미지 - <br>
 <img alt="" src="/board/upload/<%=filename%>"><p>
 - 썸 네일 이미지 -<br>
 <img alt="" src="/board/upload/sm_<%=filename%>"><p>
+
+
+
 </body>
 </html>

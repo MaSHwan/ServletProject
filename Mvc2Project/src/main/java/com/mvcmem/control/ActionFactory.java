@@ -1,11 +1,15 @@
 package com.mvcmem.control;
 
 import com.mvcmem.action.Action;
+import com.mvcmem.action.DeleteFormAction;
+import com.mvcmem.action.DeleteProcAction;
 import com.mvcmem.action.IdCheckAction;
 import com.mvcmem.action.IndexAction;
 import com.mvcmem.action.LoginFormAction;
 import com.mvcmem.action.LoginProcAction;
 import com.mvcmem.action.LogoutProcAction;
+import com.mvcmem.action.ModifyFormAction;
+import com.mvcmem.action.ModifyProcAction;
 import com.mvcmem.action.RegFormAction;
 import com.mvcmem.action.RegProcAction;
 import com.mvcmem.action.ZipCheckAction;
@@ -57,6 +61,22 @@ private static ActionFactory factory;
 			
 		case "zipCheck":
 			action = new ZipCheckAction();
+			break;
+		
+		case "modifyForm":
+			action = new ModifyFormAction();
+			break;
+			
+		case "modifyProc":
+			action = new ModifyProcAction();
+			break;
+		
+		case "deleteForm":
+			action = new DeleteFormAction();
+			break;
+			
+		case "deleteProc":
+			action = new DeleteProcAction();
 			break;
 
 		default: new IndexAction();

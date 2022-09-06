@@ -9,16 +9,17 @@
 </head>
 <body>
 <h3>등록하기</h3>
-<form action="../freeboard/regist.jsp" method="post">
+<form action="../freeboard/regist.jsp" method="post" enctype="multipart/form-data">
 	<input type="text" name="title" placeholder="제목" required><br>
 	<input type="text" name="writer" placeholder="작성자" required><br>
 	<textarea rows="30" cols="120" name ="content" placeholder="내용"></textarea><br>
 	
 	
+	
 	<div class="btn-box-option">
 	<a id="note-photo-button" class="wi-photo">
 	<img src="../images/icon-photo.png">
-	<input id="note-img-upload" type="file" name="file"><br>
+	<input id="note-img-upload" type="file" name="filename"><br>
 	</a>
 	
 	

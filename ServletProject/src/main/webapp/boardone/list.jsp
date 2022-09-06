@@ -10,7 +10,7 @@
     <% 
     
     //한 페이지에  보여줄 글 목록 수 지정
-    int pageSize = 8;
+    int pageSize = 3;
     
     //날짜 형식 지정
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm"); 
