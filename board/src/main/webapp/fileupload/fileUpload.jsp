@@ -10,7 +10,7 @@
     
    <%
    //업로드 경로 만들기 
-   String uploadPath = request.getRealPath("upload"); //upload 폴더에다
+   String uploadPath = request.getRealPath("/upload"); //upload 폴더에다
    int size = 10*1024*1024; //<- 10메가바이트임 포스트방식일때는 용량제한이 없지만 get방식일때는 용량제한이 있음
    
    String name ="";

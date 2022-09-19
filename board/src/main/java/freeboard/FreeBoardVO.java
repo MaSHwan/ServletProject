@@ -10,6 +10,7 @@ public class FreeBoardVO {
 	private Date regdate;
 	private int cnt;
 	private int likenum;
+	private String board_file;
 	
 	
 	public FreeBoardVO() {
@@ -18,7 +19,7 @@ public class FreeBoardVO {
 	
 	
 	
-	public FreeBoardVO(int num, String title, String writer, String content, Date regdate, int cnt) {
+	public FreeBoardVO(int num, String title, String writer, String content, Date regdate, int cnt, int likenum, String board_file) {
 		super();
 		this.num = num;
 		this.title = title;
@@ -26,6 +27,8 @@ public class FreeBoardVO {
 		this.content = content;
 		this.regdate = regdate;
 		this.cnt = cnt;
+		this.likenum= likenum;
+		this.board_file = board_file;
 	}
 
 
@@ -78,6 +81,20 @@ public class FreeBoardVO {
 	public void setLikenum(int likenum) {
 		this.likenum = likenum;
 	}
+	
+	
+	public String getBoard_file() {
+		return board_file;
+	}
+
+
+
+	public void setBoard_file(String board_file) {
+		this.board_file = board_file;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "BoardVO [num=" + num + ", title=" + title + ", writer=" + writer + ", content=" + content + ", regdate="

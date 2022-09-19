@@ -1,0 +1,69 @@
+@charset "UTF-8";
+.file-upload{
+	/*  background: #fff url(../images/icon-photo.png) no-repeat 15px center; */
+	
+	
+}
+.btn-box-option{
+	width: 100%;
+	height: 45px;
+	padding: 13px 10px;
+	border-top: 1px solid #eee;
+}
+
+.btn-box-option a{
+	display: block;
+	position: relative;
+	float: left;
+	width: 30px;
+	text-align: left;
+}
+
+a, button{
+	cursor: pointer;
+}
+
+a{
+	color:#337ab7;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+img{
+	vertical-align: top;
+	border: 0;
+}
+
+.btn-box-option a#note-photo-button #note-img-upload{
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 25px;
+	height: 20px;
+	text-indent: -999px;
+}
+
+.write-btn-box{
+	width: 200px;
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+	padding: 0;
+}
+
+#btn-save{
+	width: 120px;
+	height: 37px;
+	line-height: 37px;
+	padding: 0 12px;
+	border-radius: 0;
+}
+
+.write-btn-primary{
+	background: #ff8000;
+	border: 1px solid #e47200;
+	color:#fff;
+	cursor:pointer;
+}

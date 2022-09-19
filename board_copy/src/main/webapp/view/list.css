@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.title{
+	position:static;
+}
+.write-tour-story{
+	position: relative;
+    width: 100%;
+    color: #333;
+    font-weight: 500;
+}
+.write{
+	position:absolute;
+	top:10px;
+	right:0;
+	height:35px;
+	line-height:35px;
+	padding:0 15px 0 40px;
+	
+	background-color: white;
+	font-size: 15px;
+	color:#ff8000;
+	border:1px solid #ff8000;
+	border-radius:2px;
+	background: #fff url(../images/icon-write.png) no-repeat 15px center;
+	/* background-image: url(../images/icon-write.png);
+	background-repeat: no-repeat; */
+}
+
+.tabs-list{
+	float:left;
+	width:260px;
+}
+
+.present .tabs-list li{
+	width: 100%;
+	float: none;
+	font-weight:500;
+	background: #f6f6f6;
+}
+
+.tabs-list{
+	float: left;
+}
+
+ul li{
+	list-style: none;
+}
+
+li{
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+ul{
+	list-style-type: disc;
+}
+

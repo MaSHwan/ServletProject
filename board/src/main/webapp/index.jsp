@@ -3,14 +3,7 @@
      <%@ page import="board.*" %>
     <%@ page import="java.util.*" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-    <%
-    	request.setCharacterEncoding("utf-8");
-    	BoardDao dao = new BoardDao();
-    	List<BoardVO> ls = dao.selectAll();
-    	
-    	
-    	pageContext.setAttribute("ls", ls);
-    %>
+
 <!DOCTYPE html>
 <html>
 <head>

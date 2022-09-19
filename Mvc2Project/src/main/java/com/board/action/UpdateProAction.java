@@ -28,7 +28,7 @@ public class UpdateProAction implements CommandAction {
 		
 		request.setAttribute("pageNum", pageNum);
 		request.setAttribute("check", check);
-		
+			
 		
 		return "/board/updateProc.jsp";
 	}
